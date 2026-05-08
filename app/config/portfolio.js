@@ -25,7 +25,6 @@ export const portfolioConfig = {
     database: [
       { name: "PostgreSQL", years: "1" },
       { name: "Supabase", years: "1" },
-      
     ],
     aiDevTools: [
       { name: "OpenAI API", years: "1" },
@@ -50,8 +49,7 @@ export const portfolioConfig = {
       {
         name: "Child Behavior Monitoring System",
         description: "An AI-powered monitoring application designed to detect and track child behavior in real time using computer vision and deep learning. The system utilizes YOLOv8 for object detection, OpenCV for video processing, and PyTorch for AI model execution, with a Kivy-based desktop interface for live monitoring and alerts.",
-        tags: ["Python", "YOLOv8 (Ultralytics)", "OpenCV", "PyTorch", "Kivy", "NumPy", "Pygame", "Pillow", "PyInstaller"],       
-        
+        tags: ["Python", "YOLOv8 (Ultralytics)", "OpenCV", "PyTorch", "Kivy", "NumPy", "Pygame", "Pillow", "PyInstaller"]
       },
       
     ],
