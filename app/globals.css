@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    @apply bg-bg text-[#111111] font-sans;
+  }
+
+  /* Reveal animation utility */
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Stagger helpers */
+  .delay-100 { transition-delay: 0.1s; }
+  .delay-150 { transition-delay: 0.15s; }
+  .delay-200 { transition-delay: 0.2s; }
+  .delay-250 { transition-delay: 0.25s; }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center gap-2 px-7 py-3 rounded-full text-sm font-medium transition-all duration-200 cursor-pointer no-underline;
+  }
+
+  .btn-primary {
+    @apply bg-[#111111] text-white hover:bg-accent hover:-translate-y-0.5;
+  }
+
+  .btn-outline {
+    @apply bg-transparent text-[#111111] border border-border hover:border-[#111111] hover:-translate-y-0.5;
+  }
+
+  .section-label {
+    @apply text-xs font-semibold tracking-widest uppercase text-accent mb-4;
+  }
+
+  .section-title {
+    @apply font-serif text-4xl md:text-5xl leading-tight tracking-tight mb-6;
+  }
+}
